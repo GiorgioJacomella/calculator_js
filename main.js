@@ -33,7 +33,7 @@ function main(event, input_01, input_02) {
     var sub = sub_inputs(input_01, input_02);
     var mul = mul_inputs(input_01, input_02);
     var div = div_inputs(input_01, input_02);
-    results.textContent = `Addition: ${add} | Subtraction: ${sub} | Multiplication: ${mul} | Division ${div}`;
+    results.textContent = `Addition: ${add} | Subtraction: ${sub} | Multiplication: ${mul} | Division: ${div}`;
 }
  
 form.addEventListener("submit", function(event) {
