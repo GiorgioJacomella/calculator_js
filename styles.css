@@ -22,7 +22,7 @@ h1, h2 {
     margin: 10px 0;
 }
   
-button {
+button, input[type="submit"] {
     padding: 10px 20px;
     background-color: #eee;
     border: none;
