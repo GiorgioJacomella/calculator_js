@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Codec</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<header>
+    <h1><a href=index.html>Codec Tool</a></h1>
+</header>
+<br>
+
+<body>
+    <div class="container">
+        <h1>Hexadecimal</h1>
+
+        <div class="container">
+            <h2>Decimal -> Hex</h2>
+            <form>
+                <label for="hexInput">Decimal input:</label>
+                <input type="text" id="hexInput">
+                <button type="button" onclick="hexCode()">Calculate</button>
+            </form>
+            <p>Hex output: <span id="hexOutput"></span></p>
+        </div>
+
+        <div class="container">
+            <h2>Hexadecimal -> Decimal</h2>
+            <form>
+                <label for="hexInput2">Hex input:</label>
+                <input type="text" id="hexInput2">
+                <button type="button" onclick="hexDecode()">Calculate</button>
+            </form>
+            <p>Decimal output: <span id="hexDecodeOutput"></span></p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>Binary</h1>
+
+        <div class="container">
+            <h2>Decimal -> Binary</h2>
+            <form>
+                <label for="binInput">Decimal input:</label>
+                <input type="text" id="binInput">
+                <button type="button" onclick="binCode01()">Calculate</button>
+            </form>
+            <p>Binary output: <span id="binOutput"></span></p>
+        </div>
+
+        <div class="container">
+            <h2>Binary -> Decimal</h2>
+            <form>
+                <label for="binInput3">Binary input:</label>
+                <input type="text" id="binInput3">
+                <button type="button" onclick="binDecode01()">Calculate</button>
+            </form>
+            <p>Decimal output: <span id="binDecodeOutput"></span></p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>Hamming-Code</h1>
+
+        <div class="container">
+            <h2>Decimal -> Binary + Hamming</h2>
+            <form>
+                <label for="decInput2">Decimale input:</label>
+                <input type="text" id="decInput2">
+                <button type="button" onclick="binCode02()">Calculate</button>
+            </form>
+            <p>Hamming-Code output: <span id="hammingOutput"></span></p>
+        </div>
+
+        <div class="container">
+            <h2>Hamming -> Decimal </h2>
+            <form>
+                <label for="hammingInput">Hamming-Code input (Hamming bytes should be split with exactly 1 SPACE):</label>
+                <input type="text" id="hammingInput">
+                <button type="button" onclick="hammingDecode()">Calculate</button>
+            </form>
+            <p>Decimal Output: <span id="hammingDecodeOutput"></span></p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>Ceasar cipher</h1>
+
+        <div class="container">
+            <h2>Text -> Ceasar cipher</h2>
+            <form>
+                <label for="Text_input">Text input:</label>
+                <input type="text" id="Text_input">
+                <br>
+                <label for="rounds">Clips</label>
+                <input type="number" id="rounds">
+                <button type="button" onclick="caesarcipher()">Calculate</button>
+            </form>
+            <p>Encrypted output: <span id="encrypted_text"></span></p>
+        </div>
+
+        <div class="container">
+            <h2>Ceasar cipher -> Text</h2>
+            <form>
+                <label for="Text_input">Encrypted input:</label>
+                <input type="text" id="encr_input">
+                <br>
+                <label for="rounds2">Clips</label>
+                <input type="number" id="rounds2">
+                <button type="button" onclick="caesardecipher()">Calculate</button>
+            </form>
+            <p>Text output: <span id="decrypted_text"></span></p>
+        </div>
+
+    </div>
+
+    <script src="codec.js"></script>
+
+</body>
+
+<footer>
+    <div class="container">
+        <button onclick="location.href= 'https://github.com/GiorgioJacomella/calculator_js';">More about this Project</button>
+    </div>
+</footer>
+
+</html>
