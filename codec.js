@@ -120,7 +120,7 @@ function bin_decode_01(bin_input) {
 
 //get elements for hamming code
 function binCode02() {
-    var binInput2 = document.getElementById("decInput2").value;
+    var decInput2 = document.getElementById("decInput2").value;
     var hammingOutput = bin_code_02(decInput2);
     document.getElementById("hammingOutput").textContent = hammingOutput;
 }
