@@ -1,5 +1,6 @@
 # Codec and calculation  tool
 A simple tool able to calculate basic mathematical functions and on the other side able to code and decode different coding systems from hexadecimals to binary and much more.
+[Click here to try!](https://giorgiojacomella.github.io/calculator_js/index.html)
 ___
 ## Codec
 The codec part of this project is mainly focused on coding and decoding or encrypting and decripting with simple and famous methods, Some of the used methods are usefull for resistancy while others are for their simplicity.
