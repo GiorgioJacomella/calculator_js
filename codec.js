@@ -178,7 +178,7 @@ function hammingDecode() {
 
 //function for hamming decode
 function hamming_decode(inputList) {
-    var splitList = inputList.split(" ");
+    var splitList = inputList.split(",");
   
     var filteredList = splitList.map(function(string) {
       var filteredString = '';
